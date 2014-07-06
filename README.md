@@ -145,3 +145,63 @@ Bon, 10 lignes, c'est peu...
 
     $ tail -n 20 index.html
     
+## 5. Opérations sur les fichiers
+
+Faisons quelques opérations sur les fichiers avant de les éditer.
+
+D'abord, revenons à notre racine.
+
+    $ cd
+    $ pwd
+    
+Allons dans notre dossier `web`.
+
+    $ cd web
+    
+Nous allons copier notre dossier `www` vers `tmp`, pour travailler sur une copie.
+
+    $ cp web tmp
+    
+Hum... "`cp: omitting directory www`" ? C'est une erreur commune : on veut copier un dossier, on doit donc indiquer à la commande qu'on veut copier tout son contenu *récursivement*.
+
+    $ cp -r
+    $ ls
+    
+Notre dossier `tmp` existe, allons jouer un peu.
+
+    $ cd tmp
+    
+Bon, le fichier `comments.php`, j'en ai rien à faire, on va le supprimer.
+
+    $ rm comments.php
+    
+Pareil pour le dossier `images/`.
+
+    $ rm images
+    
+Ah, zut, c'est un dossier, j'ai oublié...
+
+    $ rm -r images
+    
+> ► Parler rapidement du fameux `rm -rf /`
+
+Réorganisons un peu le dossier `styles/`.
+
+    $ cd styles
+    $ ls
+    
+Je ne suis pas fan de l'idée d'avoir notre fichier `bootstrap.css` à la racine de `styles`. On va le mettre dans un nouveau dossier rien que pour lui, `libs`.
+
+    $ mkdir libs
+    $ ls
+    $ mv bootstrap.css libs
+    $ ls
+    $ cd libs
+    $ ls
+    
+Et puis ce serait bien de mettre le numéro de version dans son nom.
+
+    $ head bootstrap.css
+    $ mv bootstrap.css bootstrap-2.1.1.css
+    $ ls
+    
