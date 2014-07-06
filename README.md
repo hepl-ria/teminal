@@ -311,4 +311,12 @@ Et savoir depuis combien de temps il est lancé.
 Regardons un peu l'état de notre serveur.
 
     $ top
+    
+## 10. Historique de commandes
+
+On peut utiliser la flèche du haut, mais on peut aussi utiliser une commande dédiée.
+
+    $ history
+    
+
 
