@@ -312,11 +312,28 @@ Regardons un peu l'état de notre serveur.
 
     $ top
     
+> ► Présentation rapides des process, et des `PID`.
+    
 ## 10. Historique de commandes
 
 On peut utiliser la flèche du haut, mais on peut aussi utiliser une commande dédiée.
 
     $ history
     
+## 11. Utilitaires réseau
 
+On peut avoir les infos de la carte réseau en utilisant `ifconfig`.
 
+    $ ifconfig
+    
+On a vu `ping` au début du cours, parlons-en plus longuement.
+
+    $ ping 192.168.1.1
+    
+N'oublions pas le `CTRL+C` pour arrêter le process.
+
+## Aller plus loin...
+
+Il y a énormément de possibilité avec la ligne de commande, nous en verrons d'autre dans le cadre des cours sur *node.js*.  
+Toutefois, avec les bases présentes, vous êtes déjà parés pour la plupart des cas.  
+N'hésitez pas à consulter les références données dans l'introduction si vous voulez creuser la question.
