@@ -224,3 +224,54 @@ Pour l'éditer, nous allons utiliser l'éditeur de texte `nano`.
 On sauve avec `CTRL+O`, on quitte avec `CTRL+X`.
 
 On va en profiter pour modifier `index.html` et intégrer notre changement de chemin pour *bootstrap*.
+
+## 7. Gestion des droits
+
+Et si on allait un peu voir dans la config ?
+
+    $ cd /etc
+    $ ls
+    
+Ici, nous voyons tous les fichiers de config de notre serveur. Et si on rajouter un raccourcis dans les `hosts` ?
+
+    $ nano hosts
+    
+Oh, *permissions denied*. Pourquoi ? Affichons quelques infos sur ce fichier.
+
+    $ stat hosts
+    
+> ► Explication du système de droits.
+
+Comparons avec un de nos fichiers
+
+    $ cd
+    $ stat web/tmp/readme.md
+    
+Les droits sont pareils, mais comme le `owner` est différent, forcément, ça coince pour le fichier `/etc/hosts`.
+
+#### Petite synthèse des droits
+
+* **aucun** `--- (0)`
+* **exécution seulement** `--x (1)`
+* **écriture seulement** `-w- (2)`
+* **écriture & exécution** `-wx (3)`
+* **lecture seulement** `r-- (4)`
+* **lecture & exécution** `r-x (5)`
+* **lecture & écriture** `rw- (6)`
+* **tous** `rwx (7)`
+
+> ► De l'importance de bien choisir ses droits.
+
+On va modifier les doits de notre fichier readme pour que les membres de notre groupe puissent écrire dedans.
+
+    $ chmod 664 web/tmp/readme.md
+    
+Maintenant, on va chacun écrire un mot dans le readme de quelqu'un d'autre.
+
+    $ nano /home/userX/web/tmp/readme.md
+    
+On oublie pas de sauvegarder, puis on ferme.  
+Allons voir notre fichier pour découvrir notre petit mot.
+
+    $ cat web/tmp/readme.md
+    
