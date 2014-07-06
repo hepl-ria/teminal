@@ -24,3 +24,20 @@ Quand j'ai débuté dans le web, il était impensable d'avoir un jour besoin d'u
 Mais de nos jours, avec tous les *frameworks* et outils actuels, il n'est pas rare de commencer un projet par une petite ligne de commande de déploiement, ce que vous avez sûrement déjà dû faire. Aujourd'hui, nous allons aller un peu plus loin en apprennant les bases de la ligne de commande.
 
 Tôt ou tard, vous serez confrontés à un serveur web récalcitrant ou un langage un peu plus bas niveau qui nécéssite quelques manipulations en ligne de commande.
+
+### Démarrage
+
+Pour les besoins de ce cours, j'ai configuré un petit serveur mobile qui sera branché en classe, et accessible avec son propre réseau WIFI.  
+Connectez-vous au réseau nommé **hepl-ria**. Ce réseau n'a pas de mot de passe.
+
+Ensuite, nous commencerons le cours et seront prêts à nous connecter. Si vous êtes sur *mac* ou *linux*, il vous suffit d'ouvrir un **Terminal**, sur windows, le mieux est de télécharger le petit programme Putty, qui se télécharge à l'adresse suivante : [putty.org](http://www.putty.org/).
+
+### Note importante
+
+Le déroulement du cours et les commandes qui suivent sont données à titre de référence partielle, tout sera détaillé oralement pendant le cours.
+
+Une **invite de commande** (ou *prompt*) se termine généralement par un `$`. Dans la suite du document, tout bloque de code commencant par un `$` signifie que la suite est une commande à entrer dans votre terminal. Le signe dollar ne fait bien sûr par partie de la commande en question. 
+
+> Les blocs de citation commençant par un triangle (►) sont des indications personnelles sur le topic couvert par la commande. Ils sont là comme références pour moi-même, mais peuvent vous servir de rappel lors de la relecture du document.
+
+Si vous souhaitez une référence pratique à consulter au quotidien, je vous conseille le ["Mémento Unix/Linux", aux éditions Eyrolles](http://www.eyrolles.com/Informatique/Livre/memento-unix-linux-9782212133066), et si vous voulez aller plus loin, je vous recommande le livre ["Parlez-vous Shell ?", aux éditions ellipses](http://www.editions-ellipses.fr/product_info.php?products_id=8981).
