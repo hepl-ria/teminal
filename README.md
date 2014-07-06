@@ -41,3 +41,18 @@ Une **invite de commande** (ou *prompt*) se termine généralement par un `$`. D
 > Les blocs de citation commençant par un triangle (►) sont des indications personnelles sur le topic couvert par la commande. Ils sont là comme références pour moi-même, mais peuvent vous servir de rappel lors de la relecture du document.
 
 Si vous souhaitez une référence pratique à consulter au quotidien, je vous conseille le ["Mémento Unix/Linux", aux éditions Eyrolles](http://www.eyrolles.com/Informatique/Livre/memento-unix-linux-9782212133066), et si vous voulez aller plus loin, je vous recommande le livre ["Parlez-vous Shell ?", aux éditions ellipses](http://www.editions-ellipses.fr/product_info.php?products_id=8981).
+
+## 1. Connexion
+
+Nous connaissons déjà l'adresse IP de notre serveur : `192.168.1.50`.  
+Essayons de voir si le serveur est *live* en utilisant la commande `ping`.
+
+    $ ping -c 4 192.168.1.50
+    
+> ► Présentation de la structure d'une commande.
+    
+Notre serveur nous ayant répondu, nous allons pouvoir nous y connecter, avec la commande `ssh`.
+
+    $ ssl -l userX 192.168.1.50
+    
+Remplacez `X` par un nombre entre `1` et `20` (nous les attribuerons ensemble). Le mot de passe pour la connexion est `test`.
