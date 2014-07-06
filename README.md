@@ -205,3 +205,22 @@ Et puis ce serait bien de mettre le numéro de version dans son nom.
     $ mv bootstrap.css bootstrap-2.1.1.css
     $ ls
     
+## 6. Créer et éditer des fichiers
+
+Retournons à la racine de notre site.
+
+    $ cd ~/web/tmp
+    
+Créons un fichier vide.
+
+    $ touch readme.md
+    
+Pour l'éditer, nous allons utiliser l'éditeur de texte `nano`.
+
+> ► Petit mot rapide sur `vi` et `emacs`.
+
+    $ nano readme.md
+    
+On sauve avec `CTRL+O`, on quitte avec `CTRL+X`.
+
+On va en profiter pour modifier `index.html` et intégrer notre changement de chemin pour *bootstrap*.
