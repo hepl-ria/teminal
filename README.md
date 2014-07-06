@@ -84,3 +84,40 @@ C'est bien mais tant qu'à faire, autant ne pas taper ça à chaque fois. Créon
     $ alias l="ls -Falh"
     
 > ► Explication de la pérénité de l'alias, présentation rapide des fichiers de profil.
+
+## 3. Navigation
+
+Naviguons un peu.
+
+    $ cd files
+    $ pwd
+    $ l
+    
+Revenons au dossier parent.
+
+    $ cd ..
+    
+> ► Présentation du `.`, du `..`, du `~` et du `/`
+
+Allons voir ailleurs, utilisons la touche `TAB`.
+
+    $ cd web/www/
+    $ pwd
+    $ l
+    
+Mais quelle taille fait-il, ce répertoire ?
+
+    $ du
+    
+Pas très clair... allons voir le manuel.
+
+    $ man du
+    
+Maintenant qu'on a les bonnes options, allons-y.
+
+    $ du -ha
+    
+Bon, c'est bien tout ça, mais moi, j'aime bien avoir un terminal tout propre. Vidons l'écran.
+
+    $ clear
+    
