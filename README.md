@@ -56,3 +56,31 @@ Notre serveur nous ayant répondu, nous allons pouvoir nous y connecter, avec la
     $ ssl -l userX 192.168.1.50
     
 Remplacez `X` par un nombre entre `1` et `20` (nous les attribuerons ensemble). Le mot de passe pour la connexion est `test`.
+
+## 2. Position dans l'arborescence et listage
+
+On vient d'arriver, autant savoir où nous sommes. La commande `pwd` va nous aider.
+
+    $ pwd
+    
+> ► Présentation de l'arborescence de base d'un système UNIX.
+
+On sait où nous sommes, regardons ce qui s'y trouve, avec `ls`.
+
+    $ ls
+    
+C'est bien mais pas top. Je suis sûr qu'on peut en savoir un peu plus sur ce qu'il y a dans ce répertoire. Consultons le manuel de la commande `ls`, grâce à la commande `man`.
+
+    $ man ls
+    
+Nous avons repéré des options intéressantes.
+
+    $ ls -Falh
+    
+> ► Explication rapide de l'affichage, on reviendra sur les droits plus loin.
+    
+C'est bien mais tant qu'à faire, autant ne pas taper ça à chaque fois. Créons un alias.
+
+    $ alias l="ls -Falh"
+    
+> ► Explication de la pérénité de l'alias, présentation rapide des fichiers de profil.
