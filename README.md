@@ -295,3 +295,20 @@ On peut aussi savoir où se trouve un programme en utilisant la commande suivant
     $ which ruby
     
 Si on ne reçoit rien, c'est que le programme n'existe pas sur la machine.
+
+## 9. Informations sur le système
+
+On peut aussi avoir quelques infos sur le serveur.
+
+    $ uname -a
+    
+Et savoir depuis combien de temps il est lancé.
+
+    $ uptime
+    
+> ► Petit mot rapide sur le *load average*
+
+Regardons un peu l'état de notre serveur.
+
+    $ top
+
