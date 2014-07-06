@@ -121,3 +121,27 @@ Bon, c'est bien tout ça, mais moi, j'aime bien avoir un terminal tout propre. V
 
     $ clear
     
+## 4. Lecture
+
+Pour lire un fichier, on a l'embarras du choix.
+
+    $ cat index.html
+    
+Ouais, bon, celle-ci est un peu *pif paf pof*. Essayons-en une autre.
+
+    $ less index.html
+    
+Là, c'est tout de suite un peu plus pratiques : les flèches pour naviguer, `space` pour la page suivante, `b` pour la précédente, `q` pour quitter.
+
+Et si je ne voulais voir que le début du fichier ?
+
+    $ head index.html
+    
+Ou la fin ?
+
+    $ tail index.html
+    
+Bon, 10 lignes, c'est peu...
+
+    $ tail -n 20 index.html
+    
