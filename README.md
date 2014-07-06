@@ -73,7 +73,7 @@ C'est bien mais pas top. Je suis sûr qu'on peut en savoir un peu plus sur ce qu
 
     $ man ls
     
-Nous avons repéré des options intéressantes.
+Nous avons repéré des options intéressantes. Appuyons sur la touche `q` pour quitter.
 
     $ ls -Falh
     
