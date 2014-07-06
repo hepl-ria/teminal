@@ -240,7 +240,8 @@ Oh, *permissions denied*. Pourquoi ? Affichons quelques infos sur ce fichier.
 
     $ stat hosts
     
-> ► Explication du système de droits.
+> ► Explication du système de droits.  
+> ► Petit mot sur le `sudo`
 
 Comparons avec un de nos fichiers
 
@@ -275,3 +276,22 @@ Allons voir notre fichier pour découvrir notre petit mot.
 
     $ cat web/tmp/readme.md
     
+## 8. Informations sur les programmes
+
+Nettoyons un peu tout ce désordre, pour commencer.
+
+    $ clear
+    
+La plupart des programmes ont une option permettant de connaître la version installée sur le système.
+
+    $ nano --version
+    
+On peut aussi savoir où se trouve un programme en utilisant la commande suivante.
+
+    $ which nano
+    
+Ça nous permet aussi de savoir si un programme est installé ou non.
+
+    $ which ruby
+    
+Si on ne reçoit rien, c'est que le programme n'existe pas sur la machine.
