@@ -320,7 +320,7 @@ On peut utiliser la flèche du haut, mais on peut aussi utiliser une commande d�
 
     $ history
 
-Il est aussi possible de faire une recherche dans l'histrorique des commandes avec le racourci : `CTRL+r`
+Il est aussi possible de faire une recherche dans l'historique des commandes avec le racourci : `CTRL+r`
 
 ## 11. Utilitaires réseau
 
