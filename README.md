@@ -334,6 +334,6 @@ N'oublions pas le `CTRL+C` pour arrêter le process.
 
 ## Aller plus loin...
 
-Il y a énormément de possibilité avec la ligne de commande, nous en verrons d'autre dans le cadre des cours sur *node.js*.  
+Il y a énormément de possibilités avec la ligne de commande, nous en verrons d'autre dans le cadre des cours sur *node.js*.  
 Toutefois, avec les bases présentes, vous êtes déjà parés pour la plupart des cas.  
 N'hésitez pas à consulter les références données dans l'introduction si vous voulez creuser la question.
