@@ -217,7 +217,7 @@ Créons un fichier vide.
     
 Pour l'éditer, nous allons utiliser l'éditeur de texte `nano`.
 
-> ► Petit mot rapide sur `vi` et `emacs`.
+> ► Petit mot rapide sur `vim` et `emacs`.
 
     $ nano readme.md
     
