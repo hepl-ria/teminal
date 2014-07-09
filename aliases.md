@@ -18,22 +18,57 @@ Pour prendre en compte vos nouveaux alias, vous pouvez soit quitter puis relance
 
 * * *
 
-    alias c='clear'
+Affiche tout le contenu du dossier courant, sous forme de liste, incluant les fichiers cachés, avec des tailles dans un format *lisible par un humain*.
+
+    alias l="ls -Falh"
+
+Affiche une réprésentation graphique de l'arborescence du dossier courant.
     
     alias tree="find . | sed 's/[^/]*\//|   /g;s/| *\([^| ]\)/+--- \1/'"
 
-    alias l="ls -Falh"
+Affiche la taille des éléments du dossier courant, ainsi que sa taille totale, dans un format *lisible par un humain*.
+
     alias duh='du -h --max-depth=1'
+
+Remonte d'un niveau dans l'arborescence.
 
     alias ..='cd ..'
     alias cd..="cd .."
+
+Revient au chemin précédent dans la navigation.
+
     alias ...='cd ~-'
 
+La commande `mkdir` créé par défaut les répertoires intermédiaires, et listera les dossiers créés.
+
+    alias mkdir="mkdir -pv"
+
+Lance la vagrant box associée à ce dossier.
+
     alias vup='vagrant up'
+    
+Détruit (de force) la vagrant box associée à ce dossier.
+
     alias vdestroy='vagrant destroy --force'
+    
+Se connecte en ssh à la vagrant box associée à ce dossier.
+    
     alias vssh='vagrant ssh'
+    
+Combinaison des trois commandes précédentes : détruit, recrée puis se connecte.
+    
     alias vdeploy='vagrant destroy --force && vagrant up && vagrant ssh'
 
+Utilise le miroir npm Européen pour l'installation de packages (utile dans les cas où le miroir global est *dans les choux*).
+
     alias enpm='npm --registry registry.npmjs.eu'
+
+Liste les ports réseaux ouverts sur la machine.
+
+    alias ports='netstat -tulanp'
+
+Efface l'écran.
+
+    alias c='clear'
 
 * * *
