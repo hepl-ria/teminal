@@ -72,3 +72,10 @@ Efface l'écran.
     alias c='clear'
 
 * * *
+
+Mais les *aliases* ne sont que le bout visible de l'immense Iceberg de la configuration de votre environnement.
+
+Toute cette configuration, qui s'adresse principalement aux utilisateurs des systèmes UNIX (Linux & Mac OS X), passe par des fichiers cachés qui commencent par un `.`, c'est pourquoi on les appelle "dotfiles".
+
+Vous pouvez aller très loin en terme de personnalisation avec les dotfiles.  
+Si vous avez envie de creuser le sujet, je vous invite à lire ce [tutoriel d'introduction](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789), et vous référer à cette [liste de ressources](https://github.com/webpro/awesome-dotfiles) particulièrement complète. Vous pouvez aussi vous inspirez [des miens](https://github.com/leny/pwendok), si le cœur vous en dit...
