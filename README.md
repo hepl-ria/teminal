@@ -6,11 +6,11 @@
 
 **tèminal** is an educational project, which will be used for an introduction to shell courses.
 
-**Note:** the school where the course is given, the [HEPL](http://www.provincedeliege.be/hauteecole) from Liège, Belgium, is a french-speaking school. From this point, the instruction will be in french. Sorry.
+**Note :** the school where the course is given, the [HEPL](http://www.provincedeliege.be/hauteecole) from Liège, Belgium, is a french-speaking school. From this point, the instruction will be in french. Sorry.
 
 * * *
 
-**Note 2:** certains puristes tombés ici par hasard pourraient avoir à redire sur l'approche et la méthode. Sachez que ce cours est destiné à des étudiants qui n'ont rien d'informaticiens, et qui n'auront de la ligne de commande qu'un approche d'utilisateur ponctuel non-expert.  
+**Note 2 :** certains puristes tombés ici par hasard pourraient avoir à redire sur l'approche et la méthode. Sachez que ce cours est destiné à des étudiants qui n'ont rien d'informaticiens, et qui n'auront de la ligne de commande qu'un approche d'utilisateur ponctuel non-expert.  
 Les plus intéressés apprendront les détails par eux-même, et le contenu de ce cours est suffisant pour couvrir les besoins du reste du cours de RIA.  
 Si malgré tout, quelque chose vous chiffonne, n'hésitez pas à créer une **issue** qu'on puisse en discuter. Un grand merci.
 
@@ -40,11 +40,11 @@ Une **invite de commande** (ou *prompt*) se termine généralement par un `$`. D
 
 > Les blocs de citation commençant par un triangle (►) sont des indications personnelles sur le topic couvert par la commande. Ils sont là comme références pour moi-même, mais peuvent vous servir de rappel lors de la relecture du document.
 
-Si vous souhaitez une référence pratique à consulter au quotidien, je vous conseille le ["Mémento Unix/Linux", aux éditions Eyrolles](http://www.eyrolles.com/Informatique/Livre/memento-unix-linux-9782212133066), et si vous voulez aller plus loin, je vous recommande le livre ["Parlez-vous Shell ?", aux éditions ellipses](http://www.editions-ellipses.fr/product_info.php?products_id=8981).
+Si vous souhaitez une référence pratique à consulter au quotidien, je vous conseille le [**Mémento Unix/Linux**, aux éditions Eyrolles](http://www.eyrolles.com/Informatique/Livre/memento-unix-linux-9782212133066), et si vous voulez aller plus loin, je vous recommande le livre [**Parlez-vous Shell ?**, aux éditions ellipses](http://www.editions-ellipses.fr/product_info.php?products_id=8981).
 
 ## 1. Connexion
 
-Je vous communiquerai l'adresse de notre serveur une fois en classe.
+Je vous communiquerai l'adresse de notre serveur une fois en classe.  
 Essayons de voir si le serveur est *live* en utilisant la commande `ping`. Bien sûr, nous remplaçons `server.lan` par l'adresse du serveur local de l'école.
 
     $ ping -c 4 server.lan
