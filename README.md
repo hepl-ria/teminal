@@ -27,10 +27,10 @@ Tôt ou tard, vous serez confrontés à un serveur web récalcitrant ou un langa
 
 ### Démarrage
 
-Pour les besoins de ce cours, j'ai configuré un petit serveur mobile qui sera branché en classe, et accessible avec son propre réseau WIFI.  
-Connectez-vous au réseau nommé **hepl-ria**. Ce réseau n'a pas de mot de passe.
+Pour les besoins de ce cours, nous allons nous connecter en ssh sur le serveur local de l'école, pour lequel vous avez déjà reçu (ou allez recevoir) un login et un mot de passe.
 
-Ensuite, nous commencerons le cours et seront prêts à nous connecter. Si vous êtes sur *mac* ou *linux*, il vous suffit d'ouvrir un **Terminal**, sur windows, le mieux est de télécharger le petit programme Putty, qui se télécharge à l'adresse suivante : [putty.org](http://www.putty.org/).
+Ensuite, nous commencerons le cours et seront prêts à nous connecter.  
+Si vous êtes sur *mac* ou *linux*, il vous suffit d'ouvrir un **Terminal**, sur windows, le mieux est de télécharger le petit programme Putty, qui se télécharge à l'adresse suivante : [putty.org](http://www.putty.org/).
 
 ### Note importante
 
@@ -44,18 +44,24 @@ Si vous souhaitez une référence pratique à consulter au quotidien, je vous co
 
 ## 1. Connexion
 
-Nous connaissons déjà l'adresse IP de notre serveur : `192.168.1.50`.  
-Essayons de voir si le serveur est *live* en utilisant la commande `ping`.
+Je vous communiquerai l'adresse de notre serveur une fois en classe.
+Essayons de voir si le serveur est *live* en utilisant la commande `ping`. Bien sûr, nous remplaçons `server.lan` par l'adresse du serveur local de l'école.
 
-    $ ping -c 4 192.168.1.50
+    $ ping -c 4 server.lan
 
 > ► Présentation de la structure d'une commande.
 
 Notre serveur nous ayant répondu, nous allons pouvoir nous y connecter, avec la commande `ssh`.
 
-    $ ssh -l userX 192.168.1.50
+    $ ssh -l userX server.lan
 
-Remplacez `X` par un nombre entre `1` et `20` (nous les attribuerons ensemble). Le mot de passe pour la connexion est `test`.
+Remplacez `userX` par votre le nom d'utilisateur qui vous a été attribué à l'école.
+
+## 2. Récupération des fichiers de travail
+
+Histoire de faciliter un peu notre exercice, on va importer une petite structure de dossiers histoire d'avoir de quoi travailler. Pour cela, on va *cloner* un repository git spécifiquement créé pour l'occasion.
+
+    $ git clone http://reken.krkn.be/hepl/teminal-files.git && cd teminal-files
 
 ## 2. Position dans l'arborescence et listage
 
@@ -156,11 +162,11 @@ D'abord, revenons à notre racine.
 
 Allons dans notre dossier `web`.
 
-    $ cd web
+    $ cd teminal-files/web
 
 Nous allons copier notre dossier `www` vers `tmp`, pour travailler sur une copie.
 
-    $ cp web tmp
+    $ cp www tmp
 
 Hum... "`cp: omitting directory www`" ? C'est une erreur commune : on veut copier un dossier, on doit donc indiquer à la commande qu'on veut copier tout son contenu *récursivement*.
 
@@ -209,7 +215,7 @@ Et puis ce serait bien de mettre le numéro de version dans son nom.
 
 Retournons à la racine de notre site.
 
-    $ cd ~/web/tmp
+    $ cd ~/teminal-files/web/tmp
 
 Créons un fichier vide.
 
@@ -246,7 +252,7 @@ Oh, *permissions denied*. Pourquoi ? Affichons quelques infos sur ce fichier.
 Comparons avec un de nos fichiers
 
     $ cd
-    $ stat web/tmp/readme.md
+    $ stat teminal-files/web/tmp/readme.md
 
 Les droits sont pareils, mais comme le `owner` est différent, forcément, ça coince pour le fichier `/etc/hosts`.
 
@@ -263,18 +269,18 @@ Les droits sont pareils, mais comme le `owner` est différent, forcément, ça c
 
 > ► De l'importance de bien choisir ses droits.
 
-On va modifier les doits de notre fichier _readme_ pour que les membres de notre groupe puissent écrire dedans.
+On va modifier les doits de notre fichier _readme_ pour que n'importe qui puisse écrire dedans.
 
-    $ chmod 664 web/tmp/readme.md
+    $ chmod 666 teminal-files/web/tmp/readme.md
 
 Maintenant, on va chacun écrire un mot dans le _readme_ de quelqu'un d'autre.
 
-    $ nano /home/userX/web/tmp/readme.md
+    $ nano /home/user/teminal-files/web/tmp/readme.md
 
 On n'oublie pas de sauvegarder, puis on ferme.  
 Allons voir notre fichier pour découvrir notre petit mot.
 
-    $ cat web/tmp/readme.md
+    $ cat teminal-files/web/tmp/readme.md
 
 ## 8. Informations sur les programmes
 
