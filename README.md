@@ -10,7 +10,12 @@
 
 * * *
 
-**Note 2 :** certains puristes tombés ici par hasard pourraient avoir à redire sur l'approche et la méthode. Sachez que ce cours est destiné à des étudiants qui n'ont rien d'informaticiens, et qui n'auront de la ligne de commande qu'un approche d'utilisateur ponctuel non-expert.  
+**Note 2 :** le présent _repository_ contient le cours d'introduction à la ligne de commande, du temps où ces notions étaient abordée dans le cours de RIA, et non, comme maintenant, dans le cours de **Réseaux et serveurs**.  
+Puisque vous allez être amenés à utiliser de manière régulière la ligne de commande dans le cadre du cours de RIA, je laisse ce cours ici pour ceux qui voudraient un peu rappel ou un pense-bête.
+
+* * *
+
+**Note 3 :** certains puristes tombés ici par hasard pourraient avoir à redire sur l'approche et la méthode. Sachez que ce cours est destiné à des étudiants qui n'ont rien d'informaticiens, et qui n'auront de la ligne de commande qu'un approche d'utilisateur ponctuel non-expert.  
 Les plus intéressés apprendront les détails par eux-même, et le contenu de ce cours est suffisant pour couvrir les besoins du reste du cours de RIA.  
 Si malgré tout, quelque chose vous chiffonne, n'hésitez pas à créer une **issue** qu'on puisse en discuter. Un grand merci.
 
